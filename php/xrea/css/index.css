@@ -1,0 +1,312 @@
+@charset "UTF-8";
+/* FONT
+================================================== */
+body {
+  font-family: 'Arial', 'Noto Sans Japanese', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+}
+
+/* WRAP
+================================================== */
+html {
+  min-width: 320px;
+}
+
+body {
+  margin: 0;
+  padding: 0 10px;
+  background-color: #f5f5f5;
+}
+
+.l_wrap {
+  margin: 1em auto 3em;
+  max-width: 900px;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #2e2e2e;
+}
+.l_wrap h1,
+.l_wrap h2,
+.l_wrap h3,
+.l_wrap h4,
+.l_wrap h5 {
+  font-weight: normal;
+}
+.l_wrap h1 {
+  margin: 0 auto 1em;
+  font-size: 1.6em;
+}
+.l_wrap h2 {
+  margin: 0 auto;
+  padding: 1em 0;
+  font-size: 1.4em;
+}
+.l_wrap h3 {
+  margin: 0 auto;
+  font-size: 1.25em;
+}
+.l_wrap h4 {
+  margin: 0 auto;
+  font-size: 1.15em;
+}
+.l_wrap h5 {
+  margin: 0 auto;
+  font-size: 1em;
+}
+.l_wrap p {
+  margin: 0;
+  padding: .5em 1em;
+}
+.l_wrap ul {
+  margin: 0;
+  padding: 0;
+}
+.l_wrap li {
+  margin: 0;
+  list-style: none;
+}
+.l_wrap li a {
+  padding: 0.25em;
+}
+.l_wrap img {
+  padding: 1em;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.l_wrap hr {
+  margin: 0 auto 1em;
+  border: 1px #ebebeb solid;
+}
+
+/* SECTION
+================================================== */
+.section_demo {
+  margin: 0 0 2.5em;
+  max-width: 900px;
+}
+
+.section_demo2 .target {
+  background-color: #ffa000;
+}
+.section_demo2 .target .active a {
+  background-color: #161b1d;
+}
+.section_demo2 .target .active a:hover {
+  background-color: #2c363a !important;
+}
+.section_demo2 .target .active a:before {
+  background-color: #ffa000 !important;
+}
+.section_demo2 .active a {
+  background-color: #ffa000;
+}
+.section_demo2 .active a:hover {
+  background-color: #ffb333 !important;
+}
+.section_demo_list .target {
+  background-color: #161b1d;
+}
+.section_demo .trigger {
+  z-index: 0;
+  line-height: 1em;
+  background-color: #fff;
+}
+.section_demo .trigger a {
+  position: relative;
+  display: block;
+  padding: .5em .6em;
+  color: #425157;
+  text-decoration: none;
+  -webkit-transition: .35s all ease;
+          transition: .35s all ease;
+}
+.section_demo .trigger a:hover {
+  background-color: #e8e8e8;
+}
+.section_demo .trigger a:before, .section_demo .trigger a:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 3px;
+  background-color: #425157;
+  -webkit-transition: .25s all ease;
+          transition: .25s all ease;
+  border-radius: 10px;
+}
+.section_demo .trigger a:before {
+  top: .75em;
+  right: 20px;
+  height: 12px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.section_demo .trigger a:after {
+  top: .75em;
+  right: 13px;
+  height: 12px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.section_demo .target {
+  z-index: 1;
+  display: none;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+}
+.section_demo .target .target a {
+  background-color: #2c363a;
+}
+.section_demo .target .target a:hover {
+  background-color: #374449;
+}
+.section_demo .target .trigger a {
+  background-color: #161b1d;
+}
+.section_demo .target .trigger a:before, .section_demo .target .trigger a:after {
+  background-color: #fff;
+}
+.section_demo .target .trigger a:before {
+  top: .5em;
+  right: 16px;
+}
+.section_demo .target .trigger a:after {
+  top: .85em;
+  right: 16px;
+}
+.section_demo .target .active a {
+  /* 子階層のアクティブ箇所 */
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  color: #fff;
+}
+.section_demo .target .active a:hover {
+  background-color: #2c363a;
+}
+.section_demo .target .active a:before, .section_demo .target .active a:after {
+  -ms-transform: rotate(0);
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+.section_demo .target .active a:before {
+  top: .65em;
+  left: 1em;
+  width: 3px;
+  height: 12px;
+}
+.section_demo .target .active a:after {
+  display: none;
+}
+.section_demo .target .active a:hover {
+  background-color: #21292c !important;
+}
+.section_demo .target ul li a {
+  padding: .5em 1em .6em;
+}
+.section_demo .target a {
+  display: block;
+  color: #fff;
+  -webkit-transition: .35s all ease;
+          transition: .35s all ease;
+}
+.section_demo .active a {
+  color: #fff;
+}
+.section_demo .active a:hover {
+  background-color: #2c363a;
+}
+.section_demo .active a:before, .section_demo .active a:after {
+  background-color: #fff;
+}
+.section_demo .active a:before {
+  top: .65em;
+  right: 16px;
+  height: 16px;
+}
+.section_demo .active a:after {
+  top: .65em;
+  right: 16px;
+  height: 16px;
+}
+.section_demo > ul > li {
+  border-bottom: 1px #f5f5f5 solid;
+}
+.section_demo > ul > li:last-of-type {
+  border-bottom: 0;
+}
+
+/* BUTTON
+================================================== */
+.btn_hamburger {
+  margin: 0 auto 2em !important;
+  width: 40px;
+}
+.btn_hamburger a {
+  position: relative;
+  display: block;
+  height: 30px;
+  -webkit-transition: all .4s;
+          transition: all .4s;
+  box-sizing: border-box;
+}
+.btn_hamburger span {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #161b1d;
+  border-radius: 2px;
+  -webkit-transition: all .4s;
+          transition: all .4s;
+  box-sizing: border-box;
+}
+.btn_hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.btn_hamburger span:nth-of-type(2) {
+  top: 14px;
+}
+.btn_hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.btn_hamburger span:nth-of-type(2)::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #161b1d;
+  border-radius: 2px;
+  -webkit-transition: all .4s;
+          transition: all .4s;
+}
+.btn_hamburger .active span:nth-of-type(2) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.btn_hamburger .active span:nth-of-type(2)::after {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.btn_hamburger .active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) scale(0);
+      -ms-transform: translateY(20px) scale(0);
+          transform: translateY(20px) scale(0);
+}
+.btn_hamburger .active span:nth-of-type(3) {
+  /*
+  		webkit	⇒ GoogleClome
+     	ms		⇒ InternetExplorer
+     	ブラウザベンダーの独自拡張機能を
+     	使用する場合に付ける接頭辞
+   */
+  -webkit-transform: translateY(-20px) scale(0);
+      -ms-transform: translateY(-20px) scale(0);
+          transform: translateY(-20px) scale(0);
+}
